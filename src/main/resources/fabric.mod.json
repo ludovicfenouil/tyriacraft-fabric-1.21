@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tyriacraft",
+	"version": "${version}",
+	"name": "TyriaCraft",
+	"description": "TyriaCraft is a Guild Wars fan-made project that aims to recreate parts of the original game's world, tell engaging stories and create fun content into Minecraft.",
+	"authors": [
+		"Maelan21"
+	],
+	"contact": {
+		"homepage": "https://tyriacraft.miraheze.org/",
+		"sources": "https://github.com/FabricMC/tyriacraft-fabric-1.21"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/tyriacraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ludovicfenouil.tyriacraft.TyriaCraft"
+		],
+		"fabric-datagen": [
+			"net.ludovicfenouil.tyriacraft.TyriaCraftDataGenerator"
+		],
+		"client": [
+			"net.ludovicfenouil.tyriacraft.TyriaCraftClient"
+		]
+	},
+	"mixins": [
+		"tyriacraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
